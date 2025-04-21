@@ -1,0 +1,30 @@
+{
+    "name": "adrien-mallet/chargebee-rector",
+    "type": "library",
+    "description": "Chargebee Rector rule for ^4.0 lib migration",
+    "require": {
+        "rector/rector": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "symfony/var-dumper": "^6.4",
+        "friendsofphp/php-cs-fixer": "^3.75"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ChargebeeRector\\Utils\\Rector\\": "utils/rector/src"
+        }
+    },
+    "authors": [
+        {
+            "name": "adrien-mallet",
+            "email": "adrien.mallet@gmail.com"
+        }
+    ],
+    "autoload-dev": {
+        "psr-4": {
+            "ChargebeeRector\\Utils\\Rector\\Tests\\": "utils/rector/tests"
+        }
+    }
+}
